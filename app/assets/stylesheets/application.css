@@ -13,3 +13,193 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+/*RESET.CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* GLOBAL STYLING */
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height:150%;
+}
+
+.container {
+    width:1280px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header {
+    width:100%;
+    background-color: #FFE0B2;
+    color: white;
+    margin-bottom:60px;
+    height:76px;
+}
+
+header .title {
+    font-size:28px;
+    font-family: 'Baloo Bhaina', cursive;
+    font-style:italic;
+    font-weight:bold;
+    line-height:28px;
+    margin-top:24px;
+    display:inline-block;
+}
+
+
+/******** HEADER  NAV */
+
+nav {
+    float:right;
+    margin-top:22px;
+}
+
+nav ul li {
+    display:inline-block;
+    margin-left:25px;
+}
+
+nav ul li a {
+    line-height: 26px;
+    color:white;
+}
+
+
+/* CONTENT */
+
+.content {
+    margin-bottom:60px;
+}
+
+.content h1 {
+
+}
+
+
+/* PRODUCTS */
+
+.products {
+    margin: 25px -25px;
+    float:left;
+}
+
+.product {
+    float:left;
+    width:calc(33% - 50px);
+    margin: 25px;
+    margin-top:0;
+    padding:8px;
+    position:relative;
+    height:350px;
+}
+
+.product-img {
+    max-height:200px;
+    overflow:hidden;
+    margin-bottom:10px;
+}
+
+.product-img img {
+    max-width:100%;
+}
+
+.product-txt .price {
+    font-size:24px;
+    color: #FFA726;
+}
+
+.product .add-to-cart {
+    width:50px;
+    height:50px;
+    text-align:center;
+    line-height: 50px;
+    color:white;
+    background: #FFA726;
+    border-radius:50%;
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    font-size:26px;
+    cursor:pointer;
+}
+
+
+/* TEXT */
+
+h1,
+h2 {
+ color:#FFA726;
+}
+
+h1 {
+    font-size:32px;
+    font-family: 'Baloo Bhaina', cursive;
+    margin-bottom:20px;
+}
+
+h2 {
+    font-size:24px;
+    margin-bottom:6px;
+}
+
+h3 {
+    font-size:18px;
+    color:black;
+    margin-bottom:4px;
+
+}
+
+
+/* FOOTER */
+
+footer {
+    clear:both;
+    background-color: #FFE0B2;
+    height:120px;
+}
+
+footer .container {
+    padding-top:26px;
+}
+

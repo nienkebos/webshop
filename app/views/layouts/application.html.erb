@@ -3,12 +3,37 @@
   <head>
     <title>Webshop</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Lato:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <div class="container">
+        <span class="title">Suffe kopjes</span>
+
+        <nav>
+          <ul>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/cart">Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="content">
+        <%= yield %>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        Copyright by Nienke
+      </div>
+    </footer>
   </body>
 </html>

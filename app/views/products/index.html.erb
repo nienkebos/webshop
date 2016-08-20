@@ -1,0 +1,21 @@
+<h1>All products</h1>
+
+<div class="products">
+  <% @products.each do |product| %>
+      <div class="product">
+        <div class="product-img">
+          <img src="<%= product.image %>">
+        </div>
+
+        <div class="product-txt">
+          <h2><%= product.title %></h2>
+          <h3><%= product.subtitle%></h3>
+          <span class="price"><%= product.price %></span>
+        </div>
+
+        <div class="add-to-cart">
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+      </div>
+  <% end %>
+</div>
